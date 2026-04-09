@@ -2,6 +2,5 @@
 RepoForge, it suggests a place where developers can create, manage, and refine repositories just like a blacksmith forges metal into useful tools. It gives a sense of craftsmanship and control over your code. 🚀🔥
 
 ## 🎥 Demo
-
-   ![Demo](https://raw.githubusercontent.com/amisha-singh12/RepoForge/VideoProject.gif)
+![RepoForge Demo](https://raw.githubusercontent.com/amisha-singh12/RepoForge/main/Video%20Project%201.gif)
 
