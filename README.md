@@ -45,12 +45,12 @@ RepoForge/
 ```
 
 ## 🔄 Workflow (Step-by-Step)
-### 1️. INIT (Initialize Repository)
-### 2. ADD (Staging Area Adds file to staging area)
-### 3. COMMIT (Takes staged files , Stores metadata (message, timestamp))
-### 4. PUSH (Sends data to remote storage (AWS S3)) 
-### 5. PULL (Fetches latest data from remote)
-### 6. REVERT (Rolls back project to previous state, Uses stored commit history)
+#### 1️. INIT (Initialize Repository)
+#### 2. ADD (Staging Area Adds file to staging area)
+#### 3. COMMIT (Takes staged files , Stores metadata (message, timestamp))
+#### 4. PUSH (Sends data to remote storage (AWS S3)) 
+#### 5. PULL (Fetches latest data from remote)
+#### 6. REVERT (Rolls back project to previous state, Uses stored commit history)
 
              INIT → ADD → COMMIT → PUSH
                             ↑
