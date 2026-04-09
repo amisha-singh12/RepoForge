@@ -3,4 +3,5 @@ RepoForge, it suggests a place where developers can create, manage, and refine r
 
 ## 🎥 Demo
 
-![RepoForge Demo](./VideoProject.gif)
+   ![Demo](https://raw.githubusercontent.com/amisha-singh12/RepoForge/VideoProject.gif)
+
