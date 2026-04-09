@@ -3,13 +3,11 @@ RepoForge, it suggests a place where developers can create, manage, and refine r
 RepoForge is a **GitHub-inspired version control system** that simulates how real-world distributed version control works under the hood.
 
 Instead of just using Git, this project focuses on **building Git-like functionality from scratch**, including:
-
 - Repository initialization
 - Staging changes
 - Committing changes
 - Pushing & pulling data
 - Reverting to previous states
-
 It also includes a **web-based interface** to manage repositories, issues, and users.
 
 ## ⚙️ Tech Stack
@@ -18,33 +16,33 @@ It also includes a **web-based interface** to manage repositories, issues, and u
 - React (Vite)
 - Context API
 - CSS
-
 ### 🛠️ Backend
 - Node.js + Express
 - MongoDB
-
 ### ☁️ Storage
 - AWS S3 (for repository storage)
-
+- 
 ## 🎥 Demo
 ![RepoForge Demo](https://raw.githubusercontent.com/amisha-singh12/RepoForge/main/Video%20Project%201.gif)
 
 ## 🏗️ Project Structure
+
+```
 RepoForge/
 ├── backend/
-│ ├── controllers/
-│ ├── routes/
-│ ├── models/
-│ ├── middleware/
-│ ├── .mygit/ ← Custom Git-like system
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   ├── .mygit/        ← Custom Git-like system
 │
 ├── frontend/
-│ ├── components/
-│ ├── pages/
-│ ├── context/
+│   ├── components/
+│   ├── pages/
+│   ├── context/
 │
 ├── README.md
-
+```
 
 ## 🔄 Workflow (Step-by-Step)
 ### 1️. INIT (Initialize Repository)
@@ -59,8 +57,9 @@ RepoForge/
                          REVERT
                            ↓
                          PULL
+                         
 ## 🌐 Web Application Features
-🔐 User Authentication
+🔐 User Authentication 
 📁 Repository Management
 🐞 Issue Tracking System
 🔍 Search Repositories
