@@ -8,13 +8,16 @@ const Dashboard = () => {
   const [suggestedRepositories, setSuggestedRepositories] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
 
+   // Use env variable for API base URL
+  const API_URL = import.meta.env.VITE_API_URL;
+  
   useEffect(() => {
     const userId = localStorage.getItem("userId");
 
     const fetchRepositories = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3002/repo/user/${userId}`
+          `${API_URL}/repo/user/${userId}`
         );
         const data = await response.json();
         setRepositories(data.repositories);
@@ -25,7 +28,7 @@ const Dashboard = () => {
 
     const fetchSuggestedRepositories = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/repo/all`);
+        const response = await fetch(`${API_URL}/repo/all`);
         const data = await response.json();
         setSuggestedRepositories(data);
         console.log(suggestedRepositories);
@@ -36,7 +39,7 @@ const Dashboard = () => {
 
     fetchRepositories();
     fetchSuggestedRepositories();
-  }, []);
+  }, [API_URL]);
 
   useEffect(() => {
     if (searchQuery == "") {

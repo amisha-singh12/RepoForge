@@ -11,10 +11,16 @@ async function revertRepo(commitID) {
 
   try {
     const commitDir = path.join(commitsPath, commitID);
+    // Check if commit exists
+    if (!fs.existsSync(commitDir)) {
+      console.log("❌ Commit not found");
+      return;
+    }
     const files = await readdir(commitDir);
     const parentDir = path.resolve(repoPath, "..");
 
     for (const file of files) {
+      if (file === "commit.json") continue;
       await copyFile(path.join(commitDir, file), path.join(parentDir, file));
     }
 

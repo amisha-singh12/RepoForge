@@ -7,7 +7,7 @@ import Profile from "./components/user/Profile";
 import Login from "./components/auth/Login";
 import Signup from "./components/auth/Signup";
 
-// Auth Context
+// Auth Context 
 import { useAuth } from "./authContext";
 
 const ProjectRoutes = ()=>{

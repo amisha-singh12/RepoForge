@@ -7,8 +7,7 @@ async function pullRepo(){
     const commitsPath = path.join(repoPath, "commits");
 
     try{
-    const data = await s3
-    .listObjectsV2({
+    const data = await s3.listObjectsV2({
     Bucket: S3_BUCKET,
     Prefix: 'commits/',
     })

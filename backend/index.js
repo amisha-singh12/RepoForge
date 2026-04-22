@@ -87,6 +87,10 @@ yargs(hideBin(process.argv))
 
   app.use(cors({ origin: "*" }));
 
+  // app.get("/api/test", (req, res) => {
+  // res.json({ message: "Backend working " });
+  // });
+  
   app.use("/", mainRouter);
 
   let user = "test";
